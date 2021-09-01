@@ -1,6 +1,6 @@
 """Gaining a better understanding of numeric operators by having the user input 2 numbers to run the given operation on."""
 
-__author__: str = 730530127
+__author__: str = str(730530127)
 
 left: str = input("Left-hand side: ")
 right: str = input("Right-hand side: ")
