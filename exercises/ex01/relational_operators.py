@@ -1,6 +1,6 @@
 """Gaining a better understanding of relational operators through this straightforward program"""
 
-__author__: int = 730530127
+__author__: str = 730530127
 
 left: str = input("Left-hand side: ")
 right: str = input("Right-hand side: ")
