@@ -14,3 +14,9 @@ print("A random_float: " + str(random_float))
 # the second argument.
 random_int: int = randint(0, 100)
 print("A random int: " + str(random_int))
+
+from random import choice
+type(choice("wxyz"))
+
+2 + 4 / 2 * 2
+
