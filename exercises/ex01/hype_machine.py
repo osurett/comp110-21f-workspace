@@ -1,5 +1,5 @@
 # TODO: Write docstring here
-"""Program that generates uplifting messages corresponding to the name the user enters"""
+"""Program that generates uplifting messages corresponding to the name the user enters."""
 name: str = input("What is your name? ")
 print("You entered: ")
 print(name)

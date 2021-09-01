@@ -1,4 +1,4 @@
-"""Gaining a better understanding of relational operators through this straightforward program"""
+"""Gaining a better understanding of relational operators through this straightforward program."""
 
 __author__: str = str(730530127)
 
