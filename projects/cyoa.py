@@ -1,3 +1,5 @@
+__author__ = "730530127"
+
 player: str = str(input("What is your name? "))
 points: int = 0
 
