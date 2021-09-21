@@ -1,6 +1,7 @@
 """Student PID"""
 __author__ = "730530127"
 
+player = ()
 
 def greet() -> None:
     print("This program will help you choose the best thing for you to eat in Chapel Hill!")
