@@ -13,8 +13,8 @@ def main() -> None:
     points = 0
     greet()
 
-main()
-print(points)
+if __name__ == "__main__":
+    main()
 
 """meal: str = str(input("To begin, tell us which meal you are looking to eat: breakfast, lunch, dinner or dessert!: "))
 
