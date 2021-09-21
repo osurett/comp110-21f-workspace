@@ -1,20 +1,22 @@
+"""Interactive Program That Will Help the User Find The Right Place to Eat in Chapel Hill"""
 """Student PID"""
 __author__ = "730530127"
 
-player = ()
 
 def greet() -> None:
     print("This program will help you choose the best thing for you to eat in Chapel Hill!")
+    global player
     player = input("What is your name? ")
 
 def main() -> None:
-    print(greet())
+    global points
+    points = 0
+    greet()
 
 main()
+print(points)
 
-points = 0
-
-meal: str = str(input("To begin, tell us which meal you are looking to eat: breakfast, lunch, dinner or dessert!: "))
+"""meal: str = str(input("To begin, tell us which meal you are looking to eat: breakfast, lunch, dinner or dessert!: "))
 
 if meal == "breakfast" or meal == "Breakfast":
     input("What kind of breakfast food are you looking for? You can say things like “omeletes”,“biscuits”, “pancakes”, “waffles”, or “BLT”: ")
@@ -31,3 +33,6 @@ else:
 
 if __name__ == "__main__":
     main()
+    
+    define a function for each meal
+    """
