@@ -4,14 +4,14 @@ __author__ = "730530127"
 
 def greet() -> None:
     print("This program will help you choose the best thing for you to eat in Chapel Hill!")
-    player: str = str(input("What is your name? "))
+    player = input("What is your name? ")
 
 def main() -> None:
     print(greet())
 
 main()
 
-points: int = 0
+points = 0
 
 meal: str = str(input("To begin, tell us which meal you are looking to eat: breakfast, lunch, dinner or dessert!: "))
 
