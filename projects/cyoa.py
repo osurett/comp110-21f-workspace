@@ -3,10 +3,11 @@
 __author__ = "730530127"
 
 
-"""function greet will greet the user upon starting the program"""
-
 points: int
 player: str
+
+"""function greet will greet the user upon starting the program"""
+
 
 def greet() -> None:
     print("This program will help you choose the best place for you to eat at in Chapel Hill!")
@@ -14,7 +15,7 @@ def greet() -> None:
     player = input("What is your name? ")
 
 
-"""function main is defined"""
+"""function main will run the main portion of the program"""
 
 
 def main() -> None:
@@ -47,11 +48,11 @@ def main() -> None:
             if lfood == "chinese":
                 print("A lot of my friends like the food at Shanghai Dumpling.")
             if lfood == "sandwiches":
-                print == "Bruegger's Bagels has some good sandwiches."
+                print("Bruegger's Bagels has some good sandwiches.")
             if lfood == "salads" or lfood == "salad":
-                print == "You can try Chopt Creative Salad Company."
+                print("You can try Chopt Creative Salad Company.")
             if lfood == "burgers":
-                print == "My favorite burger is at Sutton's Drug Store. Supdogs also has good burgers and hot dogs."
+                print("My favorite burger is at Sutton's Drug Store. Supdogs also has good burgers and hot dogs.")
         else:
             if meal == "dinner" or meal == "Dinner":
                 dfood: str = str(input("What kind of dinner food are you looking for? You can say things like 'steak', 'italian', 'japanese', or 'chicken': "))
@@ -72,6 +73,7 @@ def main() -> None:
                         print("I have heard really good things about Guglhupf Bakery.")
                     if defood == "cookies":
                         print("Insomnia Cookies is a favorite for all UNC Students, and they are open late too!")
+
 
 if __name__ == "__main__":
     main()
