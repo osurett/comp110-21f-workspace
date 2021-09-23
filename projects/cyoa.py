@@ -1,3 +1,4 @@
+from random import randint
 """Interactive Program That Will Help the User Find The Right Place to Eat in Chapel Hill."""
 """Student PID."""
 __author__ = "730530127"
@@ -22,7 +23,7 @@ def main() -> None:
     print("You will start out with " + str(points) + " points. To gain points, use the following interactive game to get a Chapel Hill restaurant reccomendation!")
   
     while points < 4:
-        meal: str = str(input(player + ", tell us which meal you are looking to eat: breakfast, lunch, dinner or dessert!: "))
+        meal: str = str(input(f"{player}, tell us which meal you are looking to eat: breakfast, lunch, dinner or dessert!: "))
         if meal == "breakfast":
             breakfast()
         if meal == "lunch":
@@ -32,7 +33,7 @@ def main() -> None:
         if meal == "dessert":
             dessert()
     
-        points = points + 1
+        points = points + randint(1, 2)
         if points < 4:
             print("You have " + str(points) + " points. Choose again to try to get to 4 points!")
         else:
@@ -67,8 +68,10 @@ def lunch() -> None:
         print("Bruegger's Bagels has some good sandwiches.")
     if lfood == "salads" or lfood == "salad":
         print("You can try Chopt Creative Salad Company.")
+    global burger_constant
+    burger_constant = str("\U0001F354")
     if lfood == "burgers":
-        print("My favorite burger is at Sutton's Drug Store. Supdogs also has good burgers and hot dogs.")
+        print("My favorite " + burger_constant + " is at Sutton's Drug Store. Supdogs also has good burgers and hot dogs.")
 
 
 # if the user selects dinner is the meal they are looking for
