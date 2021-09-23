@@ -6,17 +6,18 @@ __author__ = "730530127"
 
 points: int = 0
 player: str
+burger_constant: str
 
 
-# function greet will greet the user upon starting the program
 def greet() -> None:
+    """function greet will greet the user upon starting the program"""
     print("This program will help you choose the best place for you to eat at in Chapel Hill!")
     global player
     player = input("What is your name? ")
 
 
-# function main will run the main portion of the program
 def main() -> None:
+    """function main will run the main portion of the program"""
     global points, player
     points = 0
     greet()
@@ -36,6 +37,7 @@ def main() -> None:
     
 
 def point_counter(point: int) -> int:
+    """to count the compiled points"""
     global points
     points = points + point
     if points < 4:
@@ -45,8 +47,8 @@ def point_counter(point: int) -> int:
     return(points)
 
 
-# if the user selects breakfast is the meal they are looking for
 def breakfast() -> None:
+    """if the user selects breakfast is the meal they are looking for"""
     bfood: str = str(input("What kind of breakfast food are you looking for? You can say things like “omeletes”,“biscuits”, “pancakes”, “waffles”, or “BLT”: "))
     if bfood == "biscuits":
         print("You would probably like Sunrise Biscuit Kitchen.")
@@ -60,8 +62,8 @@ def breakfast() -> None:
         print("Crossroads has some good omeletes")
 
 
-# if the user selects lunch is the meal they are looking for
 def lunch() -> None:
+    """if the user selects lunch is the meal they are looking for"""
     lfood: str = str(input("What kind of lunch food are you looking for? You can say things like 'pizza', 'mexican', 'chinese', 'sandwiches', 'salads' or 'burgers': "))
     if lfood == "pizza":
         print("Pizzeria Mercato in Carrboro has some of the best pizza in the triangle. On days it isn't open, you can try NY Pizza on Franklin Street.")
@@ -79,8 +81,8 @@ def lunch() -> None:
         print("My favorite " + burger_constant + " is at Sutton's Drug Store. Supdogs also has good burgers and hot dogs.")
 
 
-# if the user selects dinner is the meal they are looking for
 def dinner() -> None:
+    """if the user selects dinner is the meal they are looking for"""
     dfood: str = str(input("What kind of dinner food are you looking for? You can say things like 'steak', 'italian', 'japanese', or 'chicken': "))
     if dfood == "steak":
         print("Bin54 is a very popular steakhouse in Chapel Hill.")
@@ -92,8 +94,8 @@ def dinner() -> None:
         print("You should give Hibachi and Company a try.")
 
 
-# if the user selects dessert is the meal they are looking for
 def dessert() -> None:
+    """if the user selects dessert is the meal they are looking for"""
     defood: str = str(input("What kind of dessert food are you looking for? You can say things like 'cookies', 'bakery', or 'ice cream': "))
     if defood == "ice cream":
         print("You can never go wrong with Ben and Jerry's on Franklin Street.")
