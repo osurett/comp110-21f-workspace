@@ -32,12 +32,17 @@ def main() -> None:
             dinner()
         if meal == "dessert":
             dessert()
+        print(point_counter(randint(1, 2)))
     
-        points = points + randint(1, 2)
-        if points < 4:
-            print("You have " + str(points) + " points. Choose again to try to get to 4 points!")
-        else:
-            print("Great Job! You earned the full 4 points for this game and you now know some of the best places to eat in Chapel Hill!")
+
+def point_counter(point: int) -> int:
+    global points
+    points = points + point
+    if points < 4:
+        print("You have " + str(points) + "points. Choose again to try to get to 4 points!")
+    else:
+        print("Great Job! You earned the full 4 points for this game and you now know some of the best places to eat in Chapel Hill!")
+    return(points)
 
 
 # if the user selects breakfast is the meal they are looking for
