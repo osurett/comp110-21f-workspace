@@ -1,5 +1,6 @@
-from random import randint
 """Interactive Program That Will Help the User Find The Right Place to Eat in Chapel Hill."""
+
+from random import randint
 
 __author__ = "730530127"
 
